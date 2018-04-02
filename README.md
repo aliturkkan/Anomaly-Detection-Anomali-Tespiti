@@ -3,7 +3,7 @@
 Anomali Nedir?
 Veri çoğunluluğundan oldukça farklı olan verilerdir. Bu anomalilikler çoğu alanda kullanılabilir. Kullanım örnekleri;
 
-  -Veriler arasındaki kan şekeri yüksek olan hastalar
+  -Veriler arasındaki kan şekeri yüksek olan hastalar\n
   -Ozon tabakasındaki deliğin yıllara göre alınan verilerinde en uçuk artışlar
   -Yaşıtlarına göre fiziksel olarak çok farklılık gösteren çocuklar(boy, kilo vb.)
   
