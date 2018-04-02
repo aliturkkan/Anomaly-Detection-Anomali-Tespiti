@@ -1,7 +1,8 @@
 from numpy import loadtxt
 
 anomali_dict = {}
-#ardışık her iki noktanın ortalamasını tutmak için oluşturdum
+#/TR/ardışık her iki noktanın ortalamasını tutmak için oluşturdum
+#/ENG/to keep the average of both consecutive points
 avg_list = []
 counter = 0
 
@@ -26,7 +27,8 @@ class Anomali():
         anomali_counter = 0
         counter = 0
 
-        #ardaşık her iki noktanın birbirine uzaklıkları
+        #/TR/ardaşık her iki noktanın birbirine uzaklıkları
+        #/ENG/distances between successive points
         while(counter<4998):
             distance = ((avg_list[counter + 1][1] - avg_list[counter][1]) ** 2 + (avg_list[counter + 1][0] - avg_list[counter][0]) ** 2) ** 0.5
             anomali_dict[avg_list[counter],avg_list[counter + 1]] = distance
@@ -37,7 +39,8 @@ class Anomali():
                 anomali_counter = anomali_counter + 1
                 print("Anomali_{0},{1}".format(anomali_counter,key))
 
-                #Anomali olan noktaları kaydet
+                #/TR/Anomali olan noktaları kaydet
+                #/ENG/Save points with anomalies
                 with open("anomali_tespit/AnomaliTespit.csv", "a") as dosya:
                     dosya.write("Anomali_{0},{1}\n".format(anomali_counter,key))
 
